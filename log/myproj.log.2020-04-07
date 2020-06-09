@@ -1,0 +1,8 @@
+2020-04-07 16:04:37-[DEBUG MutablePropertySources.java:109]  Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2020-04-07 16:04:37-[DEBUG MutablePropertySources.java:109]  Adding [servletContextInitParams] PropertySource with lowest search precedence
+2020-04-07 16:04:37-[DEBUG MutablePropertySources.java:109]  Adding [jndiProperties] PropertySource with lowest search precedence
+2020-04-07 16:04:37-[DEBUG MutablePropertySources.java:109]  Adding [systemProperties] PropertySource with lowest search precedence
+2020-04-07 16:04:37-[DEBUG MutablePropertySources.java:109]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2020-04-07 16:04:37-[DEBUG AbstractEnvironment.java:124]  Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2020-04-07 16:04:37-[DEBUG GenericFilterBean.java:177]  Initializing filter 'encode'
+2020-04-07 16:04:37-[DEBUG GenericFilterBean.java:202]  Filter 'encode' configured successfully

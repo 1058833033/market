@@ -1,0 +1,135 @@
+2020-03-24 16:02:38-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel from market.users where user_id = ? 
+2020-03-24 16:02:38-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer)
+2020-03-24 16:02:38-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 17:12:55-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users where user_id = ? 
+2020-03-24 17:12:55-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(String)
+2020-03-24 17:12:55-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 17:15:08-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users 
+2020-03-24 17:15:08-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-24 17:15:08-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 16
+2020-03-24 18:30:47-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users 
+2020-03-24 18:30:47-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-24 18:30:47-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 16
+2020-03-24 18:33:43-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 18:33:43-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 18:33:43-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 18:38:53-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users where user_id = ? 
+2020-03-24 18:38:53-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 20190516203155(String)
+2020-03-24 18:38:53-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 18:39:40-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 18:39:40-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 100(Integer)
+2020-03-24 18:39:40-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 16
+2020-03-24 18:45:33-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 18:45:33-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 18:45:33-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 18:45:41-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users where user_id = ? 
+2020-03-24 18:45:41-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 20190514112608(String)
+2020-03-24 18:45:41-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 18:45:57-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users where user_id = ? 
+2020-03-24 18:45:57-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 20190514112608(String)
+2020-03-24 18:45:57-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 19:00:57-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:00:57-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 19:00:57-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 19:01:19-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:01:19-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 100(Integer)
+2020-03-24 19:01:19-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 15
+2020-03-24 19:16:32-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:16:32-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 2(Integer), 2(Integer)
+2020-03-24 19:16:32-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:16:46-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:16:46-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 2(Integer)
+2020-03-24 19:16:46-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:17:15-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:17:15-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 2(Integer)
+2020-03-24 19:17:15-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:17:53-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:17:53-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 2(Integer)
+2020-03-24 19:17:53-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:18:48-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:18:48-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 2(Integer)
+2020-03-24 19:18:48-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:18:53-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:18:53-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer), 2(Integer)
+2020-03-24 19:18:53-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:21:36-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:21:36-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 2(Integer)
+2020-03-24 19:21:36-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:21:49-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:21:49-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: -2(Integer), 2(Integer)
+2020-03-24 19:23:40-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:23:40-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 2(Integer)
+2020-03-24 19:23:40-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:23:45-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:23:45-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 2(Integer)
+2020-03-24 19:23:45-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 19:23:50-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:23:50-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 3(Integer)
+2020-03-24 19:23:50-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 3
+2020-03-24 19:24:03-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 19:24:03-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 2(Integer), 2(Integer)
+2020-03-24 19:24:03-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 20:01:49-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 20:01:49-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 2(Integer), 2(Integer)
+2020-03-24 20:01:49-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 20:02:33-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 20:02:33-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 2(Integer), 2(Integer)
+2020-03-24 20:02:33-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 20:03:23-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 20:03:23-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 2(Integer), 2(Integer)
+2020-03-24 20:03:23-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 2
+2020-03-24 20:37:50-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 20:37:50-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String)
+2020-03-24 20:37:50-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 20:39:59-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 20:40:00-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String)
+2020-03-24 20:40:00-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 20:43:21-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 20:43:21-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String)
+2020-03-24 20:43:21-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 20:44:19-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 20:44:19-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String)
+2020-03-24 20:44:19-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 20:44:19-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: insert into market.users(user_name, password, email, tel) values (?, ?, ?, ?) 
+2020-03-24 20:44:19-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String), 960823(String), 1058833033@qq.com(String), 15717363753(String)
+2020-03-24 20:45:12-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 20:45:12-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String)
+2020-03-24 20:45:12-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 20:45:12-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: insert into market.users(user_name, password, email, tel) values (?, ?, ?, ?) 
+2020-03-24 20:45:12-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 陈杰(String), 960823(String), 1058833033@qq.com(String), 15717363753(String)
+2020-03-24 21:32:53-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users where user_id = ? 
+2020-03-24 21:32:53-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer)
+2020-03-24 21:32:53-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 21:33:43-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 21:33:43-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 21:33:43-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 21:34:59-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 21:34:59-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 21:34:59-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 21:35:37-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 21:35:37-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 21:35:37-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 21:36:55-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users limit ?, ? 
+2020-03-24 21:36:55-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 0(Integer), 5(Integer)
+2020-03-24 21:36:55-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 5
+2020-03-24 21:37:58-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users 
+2020-03-24 21:37:58-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-24 21:37:58-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 16
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String)
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 0
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: insert into market.users(user_name, password, email, tel) values (?, ?, ?, ?) 
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String), 981003(String), 1058833033@qq.com(String), 15717363753(String)
+2020-03-24 21:50:51-[DEBUG BaseJdbcLogger.java:159]  <==    Updates: 1
+2020-03-24 21:58:34-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 21:58:34-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String)
+2020-03-24 21:58:34-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 22:02:32-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 22:02:32-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String)
+2020-03-24 22:02:32-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 22:02:44-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? 
+2020-03-24 22:02:44-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String)
+2020-03-24 22:02:44-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
+2020-03-24 22:17:24-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select user_id, user_name, password, email, tel, level, integral, if_new from market.users WHERE user_name = ? and password = ? 
+2020-03-24 22:17:24-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 方星(String), 981003(String)
+2020-03-24 22:17:24-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1

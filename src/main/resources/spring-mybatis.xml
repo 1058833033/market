@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:property-placeholder location="classpath:db.properties"/>
+    <context:component-scan base-package="com.qf.market.service"/>
+
+    <bean id="data" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${url}"/>
+        <property name="driverClassName" value="${driver}"/>
+        <property name="username" value="${user}"/>
+        <property name="password" value="${pass}"/>
+    </bean>
+
+    <bean id="mFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="typeAliasesPackage" value="com.qf.market.pojo;com.qf.market.dto"/>
+        <property name="dataSource" ref="data"/>
+        <property name="mapperLocations" value="classpath:com/qf/market/dao/*Dao.xml"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="mFactory"/>
+        <property name="basePackage" value="com.qf.market.dao"/>
+    </bean>
+
+    <bean id="dtm" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="data"/>
+    </bean>
+
+    <tx:advice id="tx" transaction-manager="dtm">
+        <tx:attributes>
+            <tx:method name="save*" rollback-for="Exception" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="insert*" rollback-for="Exception" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="update*" rollback-for="Exception" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="delete*" rollback-for="Exception" isolation="DEFAULT" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="mpt" expression="execution(* com.qf.market.service.*.*(..))"/>
+        <aop:advisor advice-ref="tx" pointcut-ref="mpt"/>
+    </aop:config>
+</beans>

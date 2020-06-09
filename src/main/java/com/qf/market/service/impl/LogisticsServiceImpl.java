@@ -1,0 +1,79 @@
+package com.qf.market.service.impl;
+
+import com.qf.market.pojo.Logistics;
+import com.qf.market.dao.LogisticsDao;
+import com.qf.market.service.LogisticsService;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+/**
+ * (Logistics)表服务实现类
+ *
+ * @author makejava
+ * @since 2020-03-24 21:29:21
+ */
+@Service("logisticsService")
+public class LogisticsServiceImpl implements LogisticsService {
+    @Resource
+    private LogisticsDao logisticsDao;
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param lid 主键
+     * @return 实例对象
+     */
+    @Override
+    public Logistics queryById(Integer lid) {
+        return this.logisticsDao.queryById(lid);
+    }
+
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit  查询条数
+     * @return 对象列表
+     */
+    @Override
+    public List<Logistics> queryAllByLimit(int offset, int limit) {
+        return this.logisticsDao.queryAllByLimit(offset, limit);
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param logistics 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Logistics insert(Logistics logistics) {
+        this.logisticsDao.insert(logistics);
+        return logistics;
+    }
+
+    /**
+     * 修改数据
+     *
+     * @param logistics 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Logistics update(Logistics logistics) {
+        this.logisticsDao.update(logistics);
+        return this.queryById(logistics.getLid());
+    }
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param lid 主键
+     * @return 是否成功
+     */
+    @Override
+    public boolean deleteById(Integer lid) {
+        return this.logisticsDao.deleteById(lid) > 0;
+    }
+}

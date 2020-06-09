@@ -1,0 +1,15 @@
+2020-03-20 20:41:52-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select sid, gid, name, pass from school.student 
+2020-03-20 20:41:52-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-20 20:41:52-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 7
+2020-03-20 20:44:51-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select sid, gid, name, pass from school.student 
+2020-03-20 20:44:51-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-20 20:44:52-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 7
+2020-03-20 20:46:17-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select sid, gid, name, pass from school.student 
+2020-03-20 20:46:17-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-20 20:46:17-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 7
+2020-03-20 20:59:30-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select sid, gid, name, pass from school.student 
+2020-03-20 20:59:30-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-20 20:59:30-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 7
+2020-03-20 21:30:31-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: select sid, gid, name, pass from school.student 
+2020-03-20 21:30:31-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 
+2020-03-20 21:30:31-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 7

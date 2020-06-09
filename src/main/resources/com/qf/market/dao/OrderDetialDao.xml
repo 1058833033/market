@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.market.dao.OrderDetialDao">
+
+    <resultMap type="com.qf.market.pojo.OrderDetial" id="OrderDetialMap">
+        <result property="did" column="did" jdbcType="INTEGER"/>
+        <result property="oid" column="oid" jdbcType="INTEGER"/>
+        <result property="fdid" column="fdid" jdbcType="INTEGER"/>
+        <result property="count" column="count" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <resultMap type="detailDTO" id="DetialDTO">
+        <result property="img" column="img" jdbcType="VARCHAR"/>
+        <result property="goodName" column="good_name" jdbcType="VARCHAR"/>
+        <result property="price" column="price" jdbcType="DOUBLE"/>
+        <result property="discount" column="discount" jdbcType="INTEGER"/>
+        <result property="count" column="count" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="OrderDetialMap">
+        select
+          did, oid, fdid, count
+        from market.order_detial
+        where did = #{did}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="OrderDetialMap">
+        select
+          did, oid, fdid, count
+        from market.order_detial
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="OrderDetialMap">
+        select
+        did, oid, fdid, count
+        from market.order_detial
+        <where>
+            <if test="did != null">
+                and did = #{did}
+            </if>
+            <if test="oid != null">
+                and oid = #{oid}
+            </if>
+            <if test="fdid != null">
+                and fdid = #{fdid}
+            </if>
+            <if test="count != null">
+                and count = #{count}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="did" useGeneratedKeys="true">
+        insert into market.order_detial(oid, fdid, count)
+        values (#{oid}, #{fdid}, #{count})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update market.order_detial
+        <set>
+            <if test="oid != null">
+                oid = #{oid},
+            </if>
+            <if test="fdid != null">
+                fdid = #{fdid},
+            </if>
+            <if test="count != null">
+                count = #{count},
+            </if>
+        </set>
+        where did = #{did}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from market.order_detial where did = #{did}
+    </delete>
+
+    <!--通过订单号查询订单详情-->
+    <select id="queryDetailDTO" resultMap="DetialDTO">
+        select f.img,f.good_name,d.count,f.price,f.discount from orders o
+        INNER JOIN order_detial d on  o.oid = d.oid
+        INNER JOIN fresh_goods f on f.fdid = d.fdid
+        where o.oid = #{oid}
+    </select>
+
+</mapper>
