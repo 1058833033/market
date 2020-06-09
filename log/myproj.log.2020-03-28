@@ -1,3 +1,0 @@
-2020-03-28 12:06:46-[DEBUG BaseJdbcLogger.java:159]  ==>  Preparing: SELECT * from users u INNER JOIN address a ON u.user_id = a.user_id where u.user_id = ? 
-2020-03-28 12:06:46-[DEBUG BaseJdbcLogger.java:159]  ==> Parameters: 1(Integer)
-2020-03-28 12:06:46-[DEBUG BaseJdbcLogger.java:159]  <==      Total: 1
